@@ -10,7 +10,7 @@ body{
 }
 
 /* Inizio header */
-.contenitore{
+.contenitore_header {
     background-color: #0C325A;
 }
 
@@ -18,15 +18,23 @@ header {
     width: 80%;
     margin: auto;
     border: dashed white 3px;
-
+    height: 50px;
 }
 
-header .logo,
-header .nav_bar,
-header .accesso  {
-    padding: 0 10px;
+header .logo {
     display: inline-block;
-    vertical-align: middle;
+    float: left;
+}
+header .nav_bar {
+    display: inline-block;
+    float: left;
+    transform: translate(10%, +50%);
+}
+header .accesso  {
+    display: inline-block;
+    float: right;
+    transform: translate(0%, +50%);
+
 }
 
 header nav ul li{
@@ -39,15 +47,39 @@ header nav ul li{
     color: white;
     border-radius: 5px;
 }
-header .accesso{
-    text-align: right;
-    padding-left: 110px;
+/* header .hero{
+    position: relative;
+    height: 300px;
+    background-image: url("../img/background-header.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: right -40px bottom 0;
+    border: solid red 1px;
+}
+header .hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    text-align: left;
+    width: 40%;
+    color: white;
+}
+header .struttura_piano{
+    position: absolute;
+    top: 75%;
+}
 
-    /* vertical-align: middle; */
-}
-header .nav_bar {
-    padding-left: 80px;
-}
+.struttura_piano {
+    font-size: 52%;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px 8px;
+    background-color: #7CBB02;
+} */
 
 #login{
     border-radius: 5px;
