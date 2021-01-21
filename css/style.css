@@ -4,3 +4,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+    background-color: blue;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Inizio header */
+.contenitore{
+    background-color: #0C325A;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+    border: dashed white 3px;
+
+}
+
+header .logo,
+header .nav_bar,
+header .accesso  {
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 52%;
+    /* font-weight: 300; */
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+header .accesso{
+    text-align: right;
+    padding-left: 110px;
+
+    /* vertical-align: middle; */
+}
+header .nav_bar {
+    padding-left: 80px;
+}
+
+#login{
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 0 15px;
+    border: white solid 1px;
+}
+#struttura_piano {
+    padding: 5px;
+    background-color: #7CBB02;
+}
