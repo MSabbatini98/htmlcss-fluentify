@@ -26,7 +26,6 @@ body{
     background-position: right -40px bottom 0;
     max-width: 1200px;
     margin: auto;
-
 }
 
 header {
@@ -34,6 +33,8 @@ header {
     max-width: 1000px;
     width: 80%;
     margin: auto;
+    border: solid green 3px;
+
 }
 
 header .logo {
@@ -66,8 +67,6 @@ header .hero{
     position: relative;
     margin: auto;
     height: 350px;
-
-    border: solid red 1px;
 }
 header .hero h1 {
     position: absolute;
@@ -102,6 +101,27 @@ header::after{
 /* fine header */
 
 /* Section 1 */
+#section_1{
+    padding: 40px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 80%;
+}
+#section_1 p {
+    letter-spacing: 0.7px;
+    color: grey;
+}
+
+
+/* Fine Section 1 */
+
+/* Section 2 */
+
+/* Fine Section 2 */
+/* Section 1 */
+/* Fine Section 1 */
+/* Section 1 */
+/* Fine Section 1 */
 
 .struttura_piano {
     font-size: 52%;
@@ -112,4 +132,7 @@ header::after{
     text-transform: uppercase;
     padding: 12px 8px;
     background-color: #7CBB02;
+}
+.contenitore_section_grey{
+    background-color: #D3D3D3;
 }
