@@ -6,6 +6,7 @@
 }
 body{
     /* background-color: blue; */
+    color: grey;
     font-family: 'Roboto', sans-serif;
 }
 .warning{
@@ -120,7 +121,6 @@ header::after{
 #section_1 p {
     margin-top: 10px;
     letter-spacing: 0.7px;
-    color: grey;
 }
 /* Fine Section 1 */
 
@@ -129,9 +129,10 @@ header::after{
 .contenitore_section::after{
     content: "";
     display: block;
-    height: 600px;
+    clear: both;
+    /* height: 500px; */
     background-color: white;
-    border: red solid 3px;
+    /* border: red solid 3px; */
 }
 .section_3_boxes{
     width: 80%;
@@ -164,11 +165,13 @@ section .colonna {
     /* margin: auto; */
         border: green dashed 5px;
 }
-/* #off_set_imm {
-    padding-right: 5px;
-} */
-hr {
-    border: 1px solid #808080;
+    /* #off_set_imm {
+        transition: translate(1%,0);
+        padding-left: 2%;
+        padding-right: 2%;
+    } */
+.hr_short{
+    border: 2px solid #D3D3D3;
     width: 30%;
     margin: auto;
     margin-top: 20px;
@@ -180,9 +183,46 @@ hr {
     margin: 10px 0;
     border: pink solid 2px;
 }
-
 /* Fine Section 2 */
-/* Section 1 */
+
+.hr_long{
+    border: 1px solid #D3D3D3;
+    margin: 40px 0;
+}
+
+/* Section 3 */
+.section_3 {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+    border: solid blue 3px;
+}
+.section_3 .box_left{
+    float: left;
+    object-fit: contain;
+    width: 40%;
+    border: solid lightblue 3px;
+
+}
+.section_3 .box_right {
+    margin: 0 50px;
+    border-left: black;
+    display: block;
+    width: 40%;
+    float: left;
+    /* padding: 0 30% 0 20%; */
+    border: solid lightblue 3px;
+}
+
+.section_3 .box_right h2 {
+    font-size: 200%;
+    margin-bottom: 10px;
+    color: black;
+}
+.section_3 .box_right p {
+    margin-bottom: 10px;
+}
 /* Fine Section 1 */
 /* Section 1 */
 /* Fine Section 1 */
