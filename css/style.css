@@ -17,6 +17,22 @@ body{
     width: 300px;
     z-index: 23;
 }
+h2 {
+    color: black;
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+
+.struttura_piano {
+    font-size: 52%;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px 8px;
+    background-color: #7CBB02;
+}
 
 /* Inizio header */
 .contenitore_header {
@@ -118,6 +134,10 @@ header::after{
     text-align: center;
     font-size: 80%;
 }
+#section_1 h2 {
+    margin: 0;
+    letter-spacing: -1px;
+}
 #section_1 p {
     margin-top: 10px;
     letter-spacing: 0.7px;
@@ -206,8 +226,7 @@ section .colonna {
 
 }
 .section_3 .box_right {
-    margin: 0 50px;
-    border-left: black;
+    margin-left: 100px;
     display: block;
     width: 40%;
     float: left;
@@ -215,25 +234,44 @@ section .colonna {
     border: solid lightblue 3px;
 }
 
-.section_3 .box_right h2 {
-    font-size: 200%;
-    margin-bottom: 10px;
-    color: black;
-}
+
 .section_3 .box_right p {
     margin-bottom: 10px;
 }
-/* Fine Section 1 */
-/* Section 1 */
-/* Fine Section 1 */
+/* Fine Section 3 */
 
-.struttura_piano {
-    font-size: 52%;
-    padding: 5px;
-    color: white;
-    border-radius: 5px;
-    color: white;
-    text-transform: uppercase;
-    padding: 12px 8px;
-    background-color: #7CBB02;
+
+/* Section 4 */
+.section_4 {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    overflow: auto;
+    position: relative;
+}
+.section_4 h2{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+.section_4 .small_menu_right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+
+
+}
+#seleziona{
+    text-transform: capitalize;
+    /* text-decoration: underline; */
+    width: 200%;
+    border-bottom: grey;
+}
+/* Fine Section 4 */
+#help {
+    position: fixed;
+    bottom: 0;
+    right: 13.5%;
 }
