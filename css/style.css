@@ -10,6 +10,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .warning{
+    visibility: hidden;
     background-color: black;
     color: red;
     position: fixed;
@@ -37,24 +38,23 @@ h2 {
 /* Inizio header */
 .contenitore_header {
     background-color: #0C325A;
-        border:black dashed 5px;
+        /* border:black dashed 5px; */
 }
 header .upper_header,
 header .lower_header {
     width: 80%;
     margin: auto;
-        border: solid purple 1px;
+        /* border: solid purple 1px; */
 }
 header {
     height: 400px;
     margin: auto;
-    border: solid green 3px;
     background-image: url("../img/background-header.png");
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: right -40px bottom 0;
     max-width: 1200px;
-    margin: auto;
+        /* border: solid green 3px; */
 }
 
 header .logo {
@@ -86,7 +86,7 @@ header .hero{
     position: relative;
     margin: auto;
     height: 350px;
-        border: solid purple 4px;
+        /* border: solid purple 4px; */
 
 }
 header .hero h1 {
@@ -112,13 +112,12 @@ header::after{
     border-radius: 5px;
     padding: 5px 20px;
     margin: 0 15px;
-    border: white solid 1px;
+        /* border: white solid 1px; */
 }
 #struttura_piano {
     padding: 5px;
     background-color: #7CBB02;
 }
-
 /* fine header */
 
 
@@ -136,10 +135,12 @@ header::after{
 }
 #section_1 h2 {
     margin: 0;
+    font-size: 175%;
     letter-spacing: -1px;
 }
 #section_1 p {
     margin-top: 10px;
+    font-size: 110%;
     letter-spacing: 0.7px;
 }
 /* Fine Section 1 */
@@ -152,7 +153,7 @@ header::after{
     clear: both;
     /* height: 500px; */
     background-color: white;
-    /* border: red solid 3px; */
+        /* border: red solid 3px; */
 }
 .section_3_boxes{
     width: 80%;
@@ -160,30 +161,26 @@ header::after{
     max-width: 1200px;
     margin: auto;
     /* margin-top: 20px; */
-    /* border: dotted blue 5px; */
+        /* border: dotted blue 5px; */
 }
 section .colonna {
     width: calc(99% / 3);
     text-align: center;
     float: left;
+    padding: 0 1.5%;
             /* display: inline-block;
             vertical-align: text-top; */
-    padding: 0 1.5%;
-    /* overflow: hidden; */
-    /* border: solid black 3px; */
+        /* border: solid black 3px; */
 }
     /* .colonna .colonna_top,
     .colonna .colonna_bot {
         border: pink solid 2px;
     } */
 .colonna img {
-    /* position: absolute;
-    top: 0; */
     object-fit: fill;
     height: 200px;
     margin-top: 35px;
-    /* margin: auto; */
-        border: green dashed 5px;
+        /* border: green dashed 5px; */
 }
     /* #off_set_imm {
         transition: translate(1%,0);
@@ -201,13 +198,13 @@ section .colonna {
 .colonna h3 {
     color: #7CBB02;
     margin: 10px 0;
-    border: pink solid 2px;
+        /* border: pink solid 2px; */
 }
 /* Fine Section 2 */
 
 .hr_long{
     border: 1px solid #D3D3D3;
-    margin: 40px 0;
+    margin: 40px 1% 40px 1%;
 }
 
 /* Section 3 */
@@ -216,14 +213,13 @@ section .colonna {
     max-width: 1200px;
     margin: auto;
     overflow: auto;
-    border: solid blue 3px;
+        /* border: solid blue 3px; */
 }
 .section_3 .box_left{
     float: left;
     object-fit: contain;
     width: 40%;
-    border: solid lightblue 3px;
-
+        /* border: solid lightblue 3px; */
 }
 .section_3 .box_right {
     margin-left: 100px;
@@ -231,10 +227,8 @@ section .colonna {
     width: 40%;
     float: left;
     /* padding: 0 30% 0 20%; */
-    border: solid lightblue 3px;
+        /* border: solid lightblue 3px; */
 }
-
-
 .section_3 .box_right p {
     margin-bottom: 10px;
 }
@@ -244,6 +238,7 @@ section .colonna {
 /* Section 4 */
 .section_4 {
     width: 80%;
+    max-width: 1200px;
     height: 100px;
     margin: auto;
     overflow: auto;
@@ -260,8 +255,6 @@ section .colonna {
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
-
-
 }
 #seleziona{
     text-transform: capitalize;
@@ -270,6 +263,8 @@ section .colonna {
     border-bottom: grey;
 }
 /* Fine Section 4 */
+
+
 #help {
     position: fixed;
     bottom: 0;
