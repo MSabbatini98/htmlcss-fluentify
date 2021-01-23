@@ -15,33 +15,50 @@
             <p>Se stai leggendo questo messaggio hai una risoluzione schermo superiore a quella supportata da questa pagina web. La preghiamo di ridurre la risoluzione ad un massimo di 1200px, Grazie</p>
         </div>
         <div class="contenitore_header">
-            <header>
-                <div class="upper_header">
+            <header >
+                <div class="upper_header clearfix">
                     <div class="logo">
-                        <img src="img/logo.svg" alt="Logo del sito">
+                        <a href="https://www.fluentify.com/home/">
+                            <img src="img/logo.svg" alt="Logo del sito">
+                        </a>
+
                     </div>
                     <div class="nav_bar">
                         <nav>
                             <ul>
-                                <li id ="metodo">Il metodo</li>
-                                <li id ="tecnologia">La tecnologia</li>
-                                <li id ="real_life_english">Real-life English</li>
-                                <li id ="soluzioni_aziendali">Soluzioni Aziendali</li>
+                                <li id ="metodo">
+                                    <a href="#">Il metodo</a>
+                                </li>
+                                <li id ="tecnologia">
+                                    <a href="#">La tecnologia</a>
+                                </li>
+                                <li id ="real_life_eng">
+                                    <a href="#">Real-life English</a>
+                                </li>
+                                <li id ="sol_aziendali">
+                                    <a href="#">Soluzioni Aziendali</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                     <div class="accesso">
                         <nav>
                             <ul>
-                                <li id ="diventa_tutor">Diventa un Tutor</li>
-                                <li id ="login">Login</li>
-                                <li id ="struttura_piano">Struttura un piano</li>
+                                <li id="tutor">
+                                    <a href="#">Diventa un Tutor</a>
+                                </li>
+                                <li id ="btn_login">
+                                    <a href="#">Login</a>
+                                </li>
+                                <li id ="btn_struttura_piano">
+                                    <a href="#">Struttura un piano</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
                 <!-- Fine upper header (detto anche true header) -->
-                <div class="lower_header">
+                <div class="lower_header clearfix">
                     <div class="hero">
                         <h1>Scegli l'inglese studiato per i professionisti</h1>
                         <span class="struttura_piano">Struttura del piano</span>
@@ -61,7 +78,7 @@
         <!-- Fine sezione grigia -->
 
         <div class="contenitore_section">
-            <section class="section_3_boxes">
+            <section class="main_section clearfix">
                 <div class="colonna">
                     <div class="colonna_top">
                         <img src="img/profile.svg" alt="Clipart della costruzione di un profilo">
@@ -100,14 +117,14 @@
         </div>
         <hr class="hr_long">
         <div class="contenitore_section">
-            <section class="section_3">
+            <section class="section_3 clearfix">
                 <div class="box_left">
                     <img src="img/mountain.svg" alt="Scalata verso B2 per poi C2">
                 </div>
                 <div class="box_right">
                     <h2>Scopri il tuo livello iniziale e struttura un piano personalizzato</h2>
                     <p>L'eperienza Fluentify parte da un semplice placemnt per abere una chiara visione del tuo inglese, ad oggi.</p>
-                    <a href="https://www.cambridgeenglish.org/it/test-your-english/">Scopri il nostro test di placement</a>
+                    <a id = "link_placement" href="https://www.cambridgeenglish.org/it/test-your-english/">Scopri il nostro test di placement</a>
                 </div>
 
             </section>
@@ -117,11 +134,13 @@
                 <h2>Struttura un piano</h2>
                 <div class="small_menu_right">
                     <p>
-                        Sono <span id ="seleziona">seleziona  &blacktriangledown; </span> <span class="struttura_piano">Struttura il tuo piano</span>
+                        Sono <span id ="seleziona"> seleziona  </span><span id="triangolino">&blacktriangledown;</span>  <span class="struttura_piano">Struttura il tuo piano</span>
                     </p>
                 </div>
             </section>
         </div>
-        <span id="help" class ="struttura_piano"> Help </span>
+        <span id="help" class ="struttura_piano">
+            <a href="https://www.helpguide.org/articles/stress/stress-management.htm">Help</a>
+        </span>
     </body>
 </html>

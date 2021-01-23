@@ -4,28 +4,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* global selectors */
 body{
     /* background-color: blue; */
     color: grey;
     font-family: 'Roboto', sans-serif;
 }
-.warning{
-    visibility: hidden;
-    background-color: black;
-    color: red;
-    position: fixed;
-    transform: translate(1200px, 200px);
-    width: 300px;
-    z-index: 23;
+a {
+    text-decoration: none;
+    color:inherit;
 }
 h2 {
     color: black;
-    font-size: 200%;
+    font-size: 175%;
     margin-bottom: 10px;
 }
-
+p{
+    line-height: 1.5em;
+}
+.clearfix::after{
+    clear: both;
+    content: "";
+    display: block;
+}
 .struttura_piano {
-    font-size: 52%;
+    font-size: 60%;
     padding: 5px;
     color: white;
     border-radius: 5px;
@@ -38,11 +41,12 @@ h2 {
 /* Inizio header */
 .contenitore_header {
     background-color: #0C325A;
+    padding-top: 10px;
         /* border:black dashed 5px; */
 }
 header .upper_header,
 header .lower_header {
-    width: 80%;
+    width: 90%;
     margin: auto;
         /* border: solid purple 1px; */
 }
@@ -52,22 +56,19 @@ header {
     background-image: url("../img/background-header.png");
     background-size: 65%;
     background-repeat: no-repeat;
-    background-position: right -40px bottom 0;
+    background-position: 110% 100%;
     max-width: 1200px;
         /* border: solid green 3px; */
 }
 
 header .logo {
-    display: inline-block;
     float: left;
 }
 header .nav_bar {
-    display: inline-block;
     float: left;
-    transform: translate(10%, +50%);
+    transform: translate(10%, +60%);
 }
 header .accesso  {
-    display: inline-block;
     float: right;
     transform: translate(0%, +50%);
 }
@@ -76,7 +77,7 @@ header nav ul li{
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 52%;
+    font-size: 70%;
     /* font-weight: 300; */
     padding: 5px;
     color: white;
@@ -87,7 +88,6 @@ header .hero{
     margin: auto;
     height: 350px;
         /* border: solid purple 4px; */
-
 }
 header .hero h1 {
     position: absolute;
@@ -103,18 +103,13 @@ header .struttura_piano{
     bottom: 20%;
     left: 0;
 }
-header::after{
-    clear: both;
-    content: "";
-    display: block;
-}
-#login{
+#btn_login{
     border-radius: 5px;
     padding: 5px 20px;
     margin: 0 15px;
-        /* border: white solid 1px; */
+    border: white solid 1px;
 }
-#struttura_piano {
+#btn_struttura_piano {
     padding: 5px;
     background-color: #7CBB02;
 }
@@ -147,16 +142,8 @@ header::after{
 
 
 /* Section 2 */
-.contenitore_section::after{
-    content: "";
-    display: block;
-    clear: both;
-    /* height: 500px; */
-    background-color: white;
-        /* border: red solid 3px; */
-}
 .section_3_boxes{
-    width: 80%;
+    width: 90%;
     position: relative;
     max-width: 1200px;
     margin: auto;
@@ -200,6 +187,7 @@ section .colonna {
     margin: 10px 0;
         /* border: pink solid 2px; */
 }
+
 /* Fine Section 2 */
 
 .hr_long{
@@ -209,7 +197,7 @@ section .colonna {
 
 /* Section 3 */
 .section_3 {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: auto;
     overflow: auto;
@@ -219,6 +207,7 @@ section .colonna {
     float: left;
     object-fit: contain;
     width: 40%;
+    padding: 0 20px;
         /* border: solid lightblue 3px; */
 }
 .section_3 .box_right {
@@ -232,14 +221,19 @@ section .colonna {
 .section_3 .box_right p {
     margin-bottom: 10px;
 }
+#link_placement{
+    /* all: initial; */
+    color: #5586BC;
+    text-decoration: underline;
+}
 /* Fine Section 3 */
 
 
 /* Section 4 */
 .section_4 {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
-    height: 100px;
+    height: 125px;
     margin: auto;
     overflow: auto;
     position: relative;
@@ -257,10 +251,16 @@ section .colonna {
     transform: translate(0, -50%);
 }
 #seleziona{
+    margin-left: 10px;
+    padding-right: 20px;
     text-transform: capitalize;
     /* text-decoration: underline; */
     width: 200%;
-    border-bottom: grey;
+    border-bottom: solid 1px grey;
+}
+#triangolino{
+    border-bottom: solid 1px grey;
+    margin-right: 20px;
 }
 /* Fine Section 4 */
 
@@ -269,4 +269,15 @@ section .colonna {
     position: fixed;
     bottom: 0;
     right: 13.5%;
+}
+
+/* EXXTRAS */
+.warning{
+    visibility: hidden;
+    background-color: black;
+    color: red;
+    position: fixed;
+    transform: translate(1200px, 200px);
+    width: 300px;
+    z-index: 23;
 }
